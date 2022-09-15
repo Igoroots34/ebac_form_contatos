@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./media/contact-book.png" alt="agenda telefônica">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <div class="banner">
+            <p class="error-message"><img src="./media/Error.png" alt="Balão de texto escrito, O nome precisa ser completo"></p>
+            <p class="success-message"></p>
+            <h1>Bem-vindo!</h1>
+            <img src="./media/Personagem 3d.png" alt="Personagem 3d de terno segurando celular">
+        </div>
+        <form id="form-cadastro">
+            <input type="text" id="nome-contato" required placeholder="Nome Completo">
+            <input type="tel" id="telefone-contato" required placeholder="Telefone (xx)xxxxx-xxxx" data-mask="(00)00000-0000" data-mask-selectonfocus="true">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome Completo</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&#9776;</td>
+                    <td>&#9776;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
